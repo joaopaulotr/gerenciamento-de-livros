@@ -8,7 +8,9 @@ public class LivroModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name="livroTitulo")
     private String titulo;
+    @Column(name="livroAutor")
     private String autor;
     private Integer anoPublicacao;
 
